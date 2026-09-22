@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A clean second-hand marketplace for quality pre-owned products from trusted sellers.">
+  <title>ReList — Quality Second-Hand Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html"><span>R</span> ReList</a>
+    <button class="mobile-toggle" aria-label="Open menu">☰</button>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="browse.html">Browse</a>
+      <a href="#categories">Categories</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline small" href="login.html">Log in</a>
+      <a class="btn btn-primary small" href="sell.html">Sell a Product</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">A smarter way to buy pre-owned</div>
+      <h1>Great products.<br><em>Second chances.</em></h1>
+      <p>Discover quality second-hand products from independent sellers in New York and beyond. Browse, compare and inquire directly.</p>
+      <form class="hero-search" action="browse.html">
+        <span>⌕</span>
+        <input name="q" placeholder="Search phones, furniture, cars, fashion..." aria-label="Search products">
+        <button class="btn btn-dark">Search</button>
+      </form>
+      <div class="hero-meta"><span>✓ Seller listings</span><span>✓ Direct inquiries</span><span>✓ Local & international buyers</span></div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card hero-card-main">
+        <div class="photo-placeholder large">Premium Finds</div>
+        <div class="hero-product-info"><span class="condition-badge">VERY GOOD</span><strong>Curated pre-owned finds</strong><small>From verified-looking listings to everyday treasures</small></div>
+      </div>
+      <div class="floating-card"><strong>1,240+</strong><span>items listed</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="trust-strip">
+  <div class="container trust-items"><span>Browse with confidence</span><span>NYC & worldwide audience</span><span>No pressure to buy</span><span>Contact sellers directly</span></div>
+</section>
+
+<section class="section" id="categories">
+  <div class="container">
+    <div class="section-heading"><div><span class="kicker">Explore</span><h2>Shop by category</h2></div><a href="browse.html">View all →</a></div>
+    <div class="category-grid">
+      <a class="category-card" href="browse.html?category=electronics"><div class="cat-icon">⌁</div><strong>Electronics</strong><span>Phones, TVs & more</span></a>
+      <a class="category-card" href="browse.html?category=furniture"><div class="cat-icon">⌂</div><strong>Furniture</strong><span>Sofas, tables & decor</span></a>
+      <a class="category-card" href="browse.html?category=vehicles"><div class="cat-icon">◈</div><strong>Vehicles</strong><span>Cars & motorcycles</span></a>
+      <a class="category-card" href="browse.html?category=fashion"><div class="cat-icon">◇</div><strong>Fashion</strong><span>Clothing & accessories</span></a>
+      <a class="category-card" href="browse.html?category=home"><div class="cat-icon">⌑</div><strong>Home</strong><span>Appliances & essentials</span></a>
+      <a class="category-card" href="browse.html?category=collectibles"><div class="cat-icon">✦</div><strong>Collectibles</strong><span>Unique finds & hobbies</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="featured">
+  <div class="container">
+    <div class="section-heading"><div><span class="kicker">Fresh listings</span><h2>Recently listed</h2></div><a href="browse.html">See marketplace →</a></div>
+    <div class="product-grid">
+      <article class="product-card">
+        <a href="product.html?id=1"><div class="product-image p-phone"><span>APPLE</span><b>iPhone 14 Pro</b></div></a>
+        <div class="product-body"><div class="row"><span class="condition">Excellent</span><span class="location">Brooklyn, NY</span></div><h3><a href="product.html?id=1">iPhone 14 Pro 256GB</a></h3><div class="price">$520</div><p>Unlocked · 256GB · Battery 91%</p></div>
+      </article>
+      <article class="product-card">
+        <a href="product.html?id=2"><div class="product-image p-sofa"><span>HOME</span><b>Modern Sofa</b></div></a>
+        <div class="product-body"><div class="row"><span class="condition">Very good</span><span class="location">Queens, NY</span></div><h3><a href="product.html?id=2">3-Seater Modern Sofa</a></h3><div class="price">$390</div><p>Neutral fabric · Clean · Smoke-free</p></div>
+      </article>
+      <article class="product-card">
+        <a href="product.html?id=3"><div class="product-image p-camera"><span>PHOTO</span><b>Sony Camera</b></div></a>
+        <div class="product-body"><div class="row"><span class="condition">Excellent</span><span class="location">Manhattan, NY</span></div><h3><a href="product.html?id=3">Sony Alpha Mirrorless Camera</a></h3><div class="price">$780</div><p>Lightly used · Lens included</p></div>
+      </article>
+      <article class="product-card">
+        <a href="product.html?id=4"><div class="product-image p-chair"><span>DESIGN</span><b>Accent Chair</b></div></a>
+        <div class="product-body"><div class="row"><span class="condition">Like new</span><span class="location">Jersey City, NJ</span></div><h3><a href="product.html?id=4">Bouclé Accent Chair</a></h3><div class="price">$165</div><p>Designer look · Barely used</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how-it-works">
+  <div class="container">
+    <div class="center-heading"><span class="kicker">Simple by design</span><h2>Buy and sell without the clutter</h2><p>ReList connects buyers and sellers. You decide what happens next.</p></div>
+    <div class="steps">
+      <div class="step"><span>01</span><h3>Find something you like</h3><p>Search by category, location, price or condition and explore detailed listings.</p></div>
+      <div class="step"><span>02</span><h3>Ask the seller</h3><p>Send a direct inquiry to ask questions, request more details or arrange a viewing.</p></div>
+      <div class="step"><span>03</span><h3>Make the deal</h3><p>Agree on payment, collection or delivery directly with the seller.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sell-banner">
+  <div class="container banner-inner"><div><span class="kicker">Have something to sell?</span><h2>Turn unused into useful.</h2><p>List your pre-owned products and reach buyers locally and abroad.</p></div><a class="btn btn-light" href="sell.html">Create a listing →</a></div>
+</section>
+</main>
+
+<footer class="footer"><div class="container footer-grid"><div><a class="logo light" href="index.html"><span>R</span> ReList</a><p>A modern marketplace for quality second-hand products.</p></div><div><h4>Marketplace</h4><a href="browse.html">Browse products</a><a href="sell.html">Sell a Product</a><a href="about.html">How it works</a></div><div><h4>Company</h4><a href="about.html">About ReList</a><a href="#">Safety tips</a><a href="#">Contact</a></div><div><h4>Account</h4><a href="login.html">Log in</a><a href="login.html#register">Create account</a></div></div><div class="container footer-bottom">© 2026 ReList. Demo marketplace interface.</div></footer>
+<script src="assets/products.js"></script><script src="assets/app.js"></script>
+</body>
+</html>

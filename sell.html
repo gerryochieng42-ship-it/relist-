@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Submit your second-hand product to ReList for review and listing.">
+<title>Sell a Product — ReList</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+<a class="logo" href="index.html"><span>R</span> ReList</a>
+<button class="mobile-toggle">☰</button>
+<nav class="main-nav"><a href="index.html">Home</a><a href="browse.html">Browse</a><a href="index.html#categories">Categories</a><a href="index.html#how-it-works">How it works</a><a href="about.html">About</a></nav>
+<div class="nav-actions"><a class="btn btn-outline small" href="browse.html">Browse products</a></div>
+</div></header>
+
+<main>
+<section class="page-hero compact"><div class="container">
+<span class="kicker">Sell with ReList</span>
+<h1>Submit your product for listing.</h1>
+<p>Send us your product details and photos. We review the information, confirm the listing fee with you, and publish approved products on the marketplace.</p>
+</div></section>
+
+<section class="form-section">
+<div class="container form-layout">
+<div class="form-card">
+<div class="notice-box"><strong>How it works</strong><p>Complete the form below. When you submit it, WhatsApp will open with your listing information prepared for our team. <strong>Your product is not published automatically.</strong></p></div>
+
+<form id="listingForm">
+<div class="form-section-title"><span>01</span><div><h2>Product information</h2><p>Give buyers accurate information about your item.</p></div></div>
+
+<label>Product title *<input id="productTitle" required placeholder="e.g. iPhone 14 Pro 256GB"></label>
+
+<div class="two-col">
+<label>Category *
+<select id="category" required><option value="">Choose category</option><option>Electronics</option><option>Furniture</option><option>Vehicles</option><option>Fashion</option><option>Home & Appliances</option><option>Collectibles</option><option>Tools & Equipment</option><option>Other</option></select></label>
+<label>Condition *
+<select id="condition" required><option value="">Choose condition</option><option>Like new</option><option>Excellent</option><option>Very good</option><option>Good</option><option>Fair</option></select></label>
+</div>
+
+<div class="two-col">
+<label>Asking price *<input id="price" required type="number" min="0" step="0.01" placeholder="e.g. 520"></label>
+<label>Currency *<select id="currency" required><option>USD — $</option><option>EUR — €</option><option>GBP — £</option><option>KES — KSh</option><option>CAD — C$</option></select></label>
+</div>
+
+<label>Description *<textarea id="description" required rows="6" placeholder="Describe the product, age, condition, defects, included accessories and anything buyers should know."></textarea></label>
+
+<div class="form-section-title"><span>02</span><div><h2>Product photos</h2><p>Prepare clear photos before sending your inquiry.</p></div></div>
+<div class="photo-notice" role="note">
+  <div class="photo-notice-icon">📸</div>
+  <div>
+    <strong>Send photos on WhatsApp after listing agreement</strong>
+    <p>Please do not upload product photos on this form. After we review your listing details and confirm the listing fee with you, send clear product photos directly through WhatsApp to our listing team.</p>
+  </div>
+</div>
+
+<div class="form-section-title"><span>03</span><div><h2>Seller information</h2><p>We need your details to contact you about the listing.</p></div></div>
+
+<div class="two-col">
+<label>Your name *<input id="sellerName" required placeholder="Full name"></label>
+<label>Phone / WhatsApp *<input id="sellerPhone" required placeholder="+1 555 000 0000"></label>
+</div>
+
+<div class="two-col">
+<label>Email *<input id="sellerEmail" required type="email" placeholder="you@example.com"></label>
+<label>City / area *<input id="location" required placeholder="e.g. Brooklyn, New York"></label>
+</div>
+
+<label>Additional information<textarea id="additional" rows="4" placeholder="Preferred contact time, delivery information, negotiable price, etc."></textarea></label>
+
+<label class="check"><input id="confirm" type="checkbox" required> I confirm that I own or am authorized to sell this product and that the information provided is accurate.</label>
+
+<button class="btn btn-primary full" type="submit">Send Listing Request on WhatsApp →</button>
+<p class="form-help">WhatsApp will open in a new tab/window. Your photos will need to be sent separately in WhatsApp after the listing information is submitted.</p>
+</form>
+</div>
+
+<aside class="seller-tips">
+<h3>Listing process</h3>
+<div><b>1. Submit details</b><p>Provide accurate product information and your contact details.</p></div>
+<div><b>2. Send your photos</b><p>After WhatsApp opens, send clear product photos to our listing team.</p></div>
+<div><b>3. Confirm your listing fee</b><p>We will communicate the applicable listing fee before publication.</p></div>
+<div><b>4. We publish it</b><p>After the listing fee is received and details are approved, your product can be posted.</p></div>
+<hr>
+<h3>Important</h3><p class="small-note">Submitting this form is a listing request only. ReList does not automatically publish submitted products. All listings are reviewed and posted manually.</p>
+</aside>
+</div>
+</section>
+</main>
+
+<footer class="footer"><div class="container footer-bottom">© 2026 ReList · Quality second-hand marketplace.</div></footer>
+<script src="assets/products.js"></script><script src="assets/app.js"></script>
+<script>
+document.getElementById('listingForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  const msg =
+`*NEW RELISTING REQUEST*
+
+*PRODUCT*
+Product: ${v('productTitle')}
+Category: ${v('category')}
+Condition: ${v('condition')}
+Asking Price: ${v('currency')} ${v('price')}
+
+*DESCRIPTION*
+${v('description')}
+
+*SELLER*
+Name: ${v('sellerName')}
+Phone/WhatsApp: ${v('sellerPhone')}
+Email: ${v('sellerEmail')}
+Location: ${v('location')}
+
+*ADDITIONAL INFORMATION*
+${v('additional') || 'None'}
+
+Photos: I will send clear product photos through WhatsApp after the listing agreement and fee confirmation.
+
+*IMPORTANT*
+I confirm that I own or am authorized to sell this product and that the information provided is accurate.
+
+Please contact me regarding the listing fee and publication process.`;
+
+  const url='https://wa.me/16672796965?text='+encodeURIComponent(msg);
+  window.open(url,'_blank');
+});
+</script>
+</body>
+</html>
